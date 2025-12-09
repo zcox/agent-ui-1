@@ -1,6 +1,8 @@
 # AI Agent Chat UI
 
-A modern, responsive browser-based chat interface for the AI Agent Chat API. Built with React, TypeScript, Vite, and Tailwind CSS.
+A modern, responsive browser-based AI agent chat interface. Built with React, TypeScript, Vite, and Tailwind CSS.
+
+Provides a UI for https://github.com/zcox/rust2, or any agent with the same [API contract](./API.md).
 
 ## Features
 
