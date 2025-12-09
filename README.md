@@ -4,6 +4,8 @@ A modern, responsive browser-based AI agent chat interface. Built with React, Ty
 
 Provides a UI for https://github.com/zcox/rust2, or any agent with the same [API contract](./API.md).
 
+![](img/agent-ui.png)
+
 ## Features
 
 - **Real-time Streaming**: Server-Sent Events (SSE) for streaming agent responses
