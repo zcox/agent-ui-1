@@ -11,7 +11,6 @@ export function ChatContainer() {
   const threads = useChatStore((state) => state.threads);
   const isStreaming = useChatStore((state) => state.isStreaming);
   const toggleSidebar = useUIStore((state) => state.toggleSidebar);
-  const isMobile = useUIStore((state) => state.isMobile);
   const isSidebarOpen = useUIStore((state) => state.isSidebarOpen);
 
   const { messages, loading } = useThread(activeThreadId);

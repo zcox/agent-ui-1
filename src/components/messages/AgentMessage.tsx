@@ -1,6 +1,7 @@
 import { Message } from '../../types/api';
 import { formatTime } from '../../utils/date';
 import { useChatStore } from '../../stores/chatStore';
+import { MarkdownRenderer } from '../ui/MarkdownRenderer';
 
 interface AgentMessageProps {
   message: Message;
@@ -24,12 +25,12 @@ export function AgentMessage({ message }: AgentMessageProps) {
     <div className="flex justify-start mb-4 px-4">
       <div className="flex flex-col items-start max-w-[80%]">
         <div className="bg-gray-100 text-gray-900 rounded-2xl rounded-tl-sm px-4 py-2 shadow-sm">
-          <p className="text-sm whitespace-pre-wrap break-words">
-            {displayText}
+          <div className="text-sm break-words">
+            <MarkdownRenderer>{displayText}</MarkdownRenderer>
             {showCursor && (
               <span className="inline-block w-1.5 h-4 bg-gray-600 ml-0.5 animate-pulse align-middle" />
             )}
-          </p>
+          </div>
         </div>
         <span className="text-xs text-gray-500 mt-1">
           {formatTime(message.timestamp)}
